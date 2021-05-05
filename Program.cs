@@ -10,22 +10,37 @@ namespace Scaler
         static void Main(string[] args)
         {
 
-            List<int> commonPrefix = new List<int>();
-            commonPrefix.Add(43);
-            commonPrefix.Add(35);
-            commonPrefix.Add(25);
-            commonPrefix.Add(5);
-            commonPrefix.Add(34);
+            //List<int> commonPrefix = new List<int>();
+            //commonPrefix.Add(43);
+            //commonPrefix.Add(35);
+            //commonPrefix.Add(25);
+            //commonPrefix.Add(5);
+            //commonPrefix.Add(34);
 
-            commonPrefix.Add(5);
-            commonPrefix.Add(8);
-            commonPrefix.Add(7);
+            //commonPrefix.Add(5);
+            //commonPrefix.Add(8);
+            //commonPrefix.Add(7);
+
+            //int[] fgd = { 2, 5, -1, 7, -3, -1, -2 };
+
+            //int[] arrr = { 1,2,3,4,5 };
+
+            List<string> ab = new List<string>();
+
+            ab.Add("cat");
+            ab.Add("dog");
+            ab.Add("god");
+            ab.Add("tac");
+
+            var anagrams = Hashing.Anagrams.anagrams(ab);
 
 
+          //  var ansSum = Queues.SlidingWindowMax.MaxInList(arrr, 3);
 
-            var aip = Queues.QueuesIntroduction.solve(9);      
 
-            var items = Stacks.SortItemsUsing2Stacks.solve(commonPrefix);
+           // var aip = StringManipulation.ReverseString.solve("the sky is blue");
+
+          //  var items = Stacks.SortItemsUsing2Stacks.solve(commonPrefix);
 
             string A = "dadbc";
             #region
