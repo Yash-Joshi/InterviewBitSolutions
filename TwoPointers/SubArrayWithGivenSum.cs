@@ -35,7 +35,7 @@ namespace Scaler.TwoPointers
             }
 
             List<int> ret = new List<int>();
-            foreach (int i in ans2)
+            foreach (int i in ans2) 
             {
                 ret.Add(i);
             }
