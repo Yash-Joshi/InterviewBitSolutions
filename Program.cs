@@ -25,6 +25,15 @@ namespace Scaler
 
             //int[] arrr = { 1,2,3,4,5 };
 
+            List<int> vals = new List<int>();
+            vals.Add(5);
+            vals.Add(10);
+            vals.Add(20);
+            vals.Add(100);
+            vals.Add(105);
+
+            var showUp = TwoPointers.SubArrayWithGivenSum.solve(vals, 110);
+
             List<string> ab = new List<string>();
 
             ab.Add("cat");
