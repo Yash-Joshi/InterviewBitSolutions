@@ -10,6 +10,27 @@ namespace Scaler
         static void Main(string[] args)
         {
 
+            LinkedList<int> p = new LinkedList<int>();
+
+            p.AddFirst(4);
+            p.AddFirst(4);
+            p.AddFirst(3);
+            p.AddFirst(1);
+            p.AddFirst(1);
+
+            //p.AddFirst(596);
+            //p.AddFirst(918);
+            //p.AddFirst(484);
+            //p.AddFirst(203);
+            //p.AddFirst(916);
+
+
+            var seeHere = LinkedList.SortingDuplicateList.sort(p.First);
+
+            
+            // point+1;
+
+
             //List<int> commonPrefix = new List<int>();
             //commonPrefix.Add(43);
             //commonPrefix.Add(35);
@@ -51,48 +72,48 @@ namespace Scaler
 
           //  var items = Stacks.SortItemsUsing2Stacks.solve(commonPrefix);
 
-            string A = "dadbc";
-            #region
-            int temp = 0, sol = 0, i = 0, j = 0;
+            //string A = "dadbc";
+            //#region
+            //int temp = 0, sol = 0, i = 0, j = 0;
 
-            Dictionary<char, int> myMap = new Dictionary<char, int>();
+            //Dictionary<char, int> myMap = new Dictionary<char, int>();
 
-            while (j < A.Length)
-            {
-                if (!myMap.ContainsKey(A[j]))
-                {
-                    myMap.Add(A[j], 1);
-                    j++;
-                    temp++;
-                }
-                else
-                {
-                    while (A[i] != A[j])
-                    {
-                        myMap.Remove(A[i]);
-                        i++;
-                        temp--;
+            //while (j < A.Length)
+            //{
+            //    if (!myMap.ContainsKey(A[j]))
+            //    {
+            //        myMap.Add(A[j], 1);
+            //        j++;
+            //        temp++;
+            //    }
+            //    else
+            //    {
+            //        while (A[i] != A[j])
+            //        {
+            //            myMap.Remove(A[i]);
+            //            i++;
+            //            temp--;
 
-                    }
+            //        }
 
-                    if (i != j)
-                    {
-                        i++;
-                    }
-                    temp--;
-                    myMap.Remove(A[j]);
-                }
-                if (temp > sol)
-                {
-                    sol = temp;
-                }
+            //        if (i != j)
+            //        {
+            //            i++;
+            //        }
+            //        temp--;
+            //        myMap.Remove(A[j]);
+            //    }
+            //    if (temp > sol)
+            //    {
+            //        sol = temp;
+            //    }
 
-            }
+            //}
 
            
 
-            #endregion
-            Console.WriteLine(sol);
+            //#endregion
+           // Console.WriteLine(sol);
             Console.WriteLine("Hello World!");
             Console.ReadLine();
         }

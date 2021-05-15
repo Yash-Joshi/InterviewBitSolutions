@@ -6,14 +6,14 @@ namespace Scaler.LinkedList
 {
     public class RemoveElementFromEnd
     {
-        public LinkedListNode removeNthFromEnd(LinkedListNode A, int B)
+        public static LinkedListNode<int> removeNthFromEnd(LinkedListNode<int> A, int B)
         {
 
-
-            LinkedListNode head = A;
-            LinkedListNode temp = head;
-            LinkedListNode checkMatch = head;
+            LinkedListNode<int> head = A;
+            LinkedListNode<int> temp = head;
+            
             int elementToRemoveFromStart = 0;
+
             int count = 0;
             while (temp != null && temp.Next != null)
             {
@@ -23,22 +23,26 @@ namespace Scaler.LinkedList
 
             if (B > count)
             {
-                return A;
+                head = head.Next;
+                return head;
             }
 
-            else
+            elementToRemoveFromStart = count - B;
+            
+            int aCount = 0;
+            LinkedListNode<int> prev = head;
+            LinkedListNode<int> current = head;
+            while (aCount != elementToRemoveFromStart)
             {
-                elementToRemoveFromStart = count - B;
+                aCount++;
+                prev = prev.Next;
+                current = prev.Next;
             }
 
-            while (count != elementToRemoveFromStart - 1)
-            {
-                checkMatch = checkMatch.Next;
-            }
+            prev = current.Next;
+           // prev.Next = current.Next;
 
-            checkMatch.next = checkMatch.Next.Next;
-
-            return A;
+            return prev;
         }
 
     }
