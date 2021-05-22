@@ -5,10 +5,25 @@ using System.Linq;
 
 namespace Scaler
 {
+    
+
     class Program
     {
+
         static void Main(string[] args)
         {
+            TreeNode Left = new TreeNode(2);
+            
+
+            TreeNode Right = new TreeNode(3);
+            
+
+            TreeNode t = new TreeNode(1);
+            t.val = 1;
+            t.left = Left;
+            t.right = Right;
+
+            var pppp = Trees.BalancedTree.inorderTraversal(t);
 
             LinkedList<int> p = new LinkedList<int>();
 
