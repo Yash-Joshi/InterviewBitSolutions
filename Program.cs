@@ -12,18 +12,25 @@ namespace Scaler
 
         static void Main(string[] args)
         {
-            TreeNode Left = new TreeNode(2);
+
+            string brackets = "(a/b)+(b*d)+(a*a)+a";
+            var pppp = Stacks.RedundantBraces.braces(brackets);
+            #region  code for  tree DS
+
+            //TreeNode Left = new TreeNode(2);
             
 
-            TreeNode Right = new TreeNode(3);
+            //TreeNode Right = new TreeNode(3);
             
 
-            TreeNode t = new TreeNode(1);
-            t.val = 1;
-            t.left = Left;
-            t.right = Right;
+            //TreeNode t = new TreeNode(1);
+            //t.val = 1;
+            //t.left = Left;
+            //t.right = Right;
 
-            var pppp = Trees.BalancedTree.inorderTraversal(t);
+            //var pppp = Trees.BalancedTree.inorderTraversal(t);
+
+            #endregion
 
             LinkedList<int> p = new LinkedList<int>();
 
