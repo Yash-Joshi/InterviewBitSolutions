@@ -22,7 +22,7 @@ namespace Scaler.LinkedList
                 }
             }
 
-            return current;
+            return p;
 
         }
     }

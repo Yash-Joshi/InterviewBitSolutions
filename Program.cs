@@ -13,6 +13,8 @@ namespace Scaler
         static void Main(string[] args)
         {
 
+            int A = 3;
+            var aaAAS = NumberBit_Manipulation.Reversing32BitInteger.solve(A);
             string brackets = "(a/b)+(b*d)+(a*a)+a";
             var pppp = Stacks.RedundantBraces.braces(brackets);
             #region  code for  tree DS
