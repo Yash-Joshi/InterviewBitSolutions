@@ -13,34 +13,45 @@ namespace Scaler
         static void Main(string[] args)
         {
 
-            int A = 3;
-            var aaAAS = NumberBit_Manipulation.Reversing32BitInteger.solve(A);
-            string brackets = "(a/b)+(b*d)+(a*a)+a";
-            var pppp = Stacks.RedundantBraces.braces(brackets);
-            #region  code for  tree DS
+            //int A = 3;
+            //var aaAAS = NumberBit_Manipulation.Reversing32BitInteger.solve(A);
+            //string brackets = "(a/b)+(b*d)+(a*a)+a";
+            //var pppp = Stacks.RedundantBraces.braces(brackets);
+            //#region  code for  tree DS
 
-            //TreeNode Left = new TreeNode(2);
-            
+            ////TreeNode Left = new TreeNode(2);
 
-            //TreeNode Right = new TreeNode(3);
-            
 
-            //TreeNode t = new TreeNode(1);
-            //t.val = 1;
-            //t.left = Left;
-            //t.right = Right;
+            ////TreeNode Right = new TreeNode(3);
 
-            //var pppp = Trees.BalancedTree.inorderTraversal(t);
 
-            #endregion
+            ////TreeNode t = new TreeNode(1);
+            ////t.val = 1;
+            ////t.left = Left;
+            ////t.right = Right;
 
-            LinkedList<int> p = new LinkedList<int>();
+            ////var pppp = Trees.BalancedTree.inorderTraversal(t);
 
-            p.AddFirst(4);
-            p.AddFirst(4);
-            p.AddFirst(3);
-            p.AddFirst(1);
-            p.AddFirst(1);
+            //#endregion
+
+            ListNode p1 = new ListNode(2);
+            ListNode p2 = new ListNode(3);
+            ListNode p3 = new ListNode(4);
+            ListNode p4 = new ListNode(5);
+
+            ListNode p = new ListNode(1);
+            p.next = p1;
+            p1.next = p2;
+            p2.next = p3;
+            p3.next = p4;
+
+            //LinkedList<int> p = new LinkedList<int>();
+
+            //p.AddFirst(5);
+            //p.AddFirst(4);
+            //p.AddFirst(3);
+            //p.AddFirst(2);
+            //p.AddFirst(1);
 
             //p.AddFirst(596);
             //p.AddFirst(918);
@@ -49,7 +60,7 @@ namespace Scaler
             //p.AddFirst(916);
 
 
-            var seeHere = LinkedList.SortingDuplicateList.sort(p.First);
+            var seeHere = LinkedList.ReverseListMtoN.reverse(p, 3, 4);
 
             
             // point+1;
