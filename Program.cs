@@ -38,12 +38,14 @@ namespace Scaler
             ListNode p2 = new ListNode(3);
             ListNode p3 = new ListNode(4);
             ListNode p4 = new ListNode(5);
+            ListNode p5 = new ListNode(6);
 
             ListNode p = new ListNode(1);
             p.next = p1;
             p1.next = p2;
             p2.next = p3;
             p3.next = p4;
+            p4.next = p5;
 
             //LinkedList<int> p = new LinkedList<int>();
 
@@ -60,7 +62,7 @@ namespace Scaler
             //p.AddFirst(916);
 
 
-            var seeHere = LinkedList.ReverseListMtoN.reverse(p, 3, 4);
+            var seeHere = LinkedList.ReverseListMtoN.reverse(p, 2, 3);
 
             
             // point+1;

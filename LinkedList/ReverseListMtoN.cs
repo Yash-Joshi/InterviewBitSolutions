@@ -30,6 +30,8 @@ namespace Scaler.LinkedList
             ListNode temp = A;
 
             //Find the starting point
+            //1 2 3 4 5 6  B=2 , C =3 
+            // 1 3 2 4 5 6 
             int i = 1;
             for (; i < B; i++)
             {
@@ -91,6 +93,7 @@ namespace Scaler.LinkedList
            ListNode next = reverse_Start;
            ListNode current = reverse_Start;
 
+            // 1 2 3 4 5 6 
             while (current != null)
             {
                 next = current.next;
