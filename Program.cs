@@ -34,19 +34,26 @@ namespace Scaler
 
             //#endregion
 
-            ListNode p1 = new ListNode(2);
-            ListNode p2 = new ListNode(3);
-            ListNode p3 = new ListNode(4);
-            ListNode p4 = new ListNode(5);
-            ListNode p5 = new ListNode(6);
+            ListNode p1 = new ListNode(8);
+            ListNode p2 = new ListNode(13);
+            //ListNode p3 = new ListNode(4);
+            //ListNode p4 = new ListNode(5);
+            //ListNode p5 = new ListNode(6);
 
-            ListNode p = new ListNode(1);
+            ListNode p = new ListNode(5);
             p.next = p1;
             p1.next = p2;
-            p2.next = p3;
-            p3.next = p4;
-            p4.next = p5;
+            //p2.next = p3;
+            //p3.next = p4;
+            //p4.next = p5;
 
+            ListNode p22 = new ListNode(9);
+            ListNode p33 = new ListNode(10);
+            ListNode pNew = new ListNode(4);
+            pNew.next = p22;
+            p22.next = p33;
+
+            var finalList = LinkedList.Merege2List.mergeTwoLists(p, pNew);
             //LinkedList<int> p = new LinkedList<int>();
 
             //p.AddFirst(5);
